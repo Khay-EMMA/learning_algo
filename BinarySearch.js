@@ -3,16 +3,16 @@ const binarySearch = (list, item) => {
   let high = list.length - 1;
 
   while (low <= high) {
-    let mid = low + high;
+    let middle = low + high;
 
     let guess = list[mid];
 
     if (guess == item) {
-      return mid;
+      return middle;
     } else if (guess > item) {
-      high = mid - 1;
+      high = middle - 1;
     } else {
-      low = mid + 1;
+      low = middle + 1;
     }
   }
 };
